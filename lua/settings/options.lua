@@ -2,6 +2,7 @@
 vim.opt.number = true        -- Абсолютная нумерация
 vim.opt.relativenumber = true -- Относительная нумерация
 
+
 -- Другие полезные настройки
 vim.opt.laststatus = 2       -- Всегда показывать строку статуса
 vim.opt.clipboard = "unnamedplus" -- Общий буфер обмена с системой
@@ -12,7 +13,7 @@ vim.opt.cursorline = true    -- Подсветка текущей строки
 vim.g.mapleader = " " -- Пробел
 vim.g.maplocalleader = " " -- Локальный leader (для конкретных буферов)
 vim.api.nvim_set_keymap('i', 'jj', '<Esc>', {noremap = true})
-
+vim.api.nvim_set_keymap('t', 'jj', '<C-\\><C-n>', {noremap= true})
 -- Ну тупа кейбинды --
 vim.keymap.set("n", "<Tab>", ":bnext<CR>", { desc = "Следующий буфер" })
 vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>", { desc = "Предыдущий буфер" })

@@ -23,7 +23,7 @@ return require("lazy").setup({
       require("mason-lspconfig").setup()
     end,
   },
-  --vim.g.tokyonight_style = "night"  -- Включаем ночной стиль
+  -- vim.g.tokyonight_style = "night"  -- Включаем ночной стиль
 
   -- Для удобного управления плагинами
   "nvim-lua/plenary.nvim",

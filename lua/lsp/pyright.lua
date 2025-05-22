@@ -8,7 +8,7 @@ local lspconfig = require("lspconfig")
 
 require('nvim-navic').setup({
   icons = {
-    File          = " ",
+    File          = "File",
     Module        = " ",
     Namespace     = "Ns ",
     Package       = " ",
@@ -19,7 +19,7 @@ require('nvim-navic').setup({
     Constructor   = " ",
     Enum          = "練",
     Interface     = "練",
-    Function      = "Func ",
+    Function      = "def",
     Variable      = " ",
     Constant      = " ",
     String        = " ",
@@ -59,8 +59,8 @@ lspconfig.pyright.setup({
     -- Диагностика
     vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)    -- Предыдущее сообщение об ошибке
     vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)    -- Следующее сообщение об ошибке
-    vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, opts) -- Показать диагностику
-    vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, opts) -- Список диагностики
+    vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts) -- Показать диагностику
+    vim.keymap.set("n", "<leader>dl", vim.diagnostic.setloclist, opts) -- Список диагностики
 
     -- Настройки для диагностики LSP
     vim.diagnostic.config({
