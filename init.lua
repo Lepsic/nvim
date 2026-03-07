@@ -27,6 +27,8 @@ require("plugins")
 require("lsp.pyright")
 require("lsp.nginx")
 require("lsp.rust")
+require("lsp.js")
+require("lsp.css")
 -- Настройка подсветки Treesitter
 vim.cmd("syntax on") -- Включить подсветку синтаксиса
 -- Настройка подсветки Treesitter
