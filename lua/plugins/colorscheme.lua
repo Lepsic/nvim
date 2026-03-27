@@ -1,10 +1,15 @@
+-- return {
+--   "rebelot/kanagawa.nvim",
+--   config = function()
+--     vim.cmd("colorscheme kanagawa-dragon")
+--   end,
+-- }
 return {
-  "rebelot/kanagawa.nvim",
-  config = function()
-    vim.cmd("colorscheme kanagawa-dragon")
-  end,
+  "folke/tokyonight.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {},
 }
-
 
 
 -- return {

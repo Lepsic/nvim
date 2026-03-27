@@ -17,16 +17,20 @@ vim.opt.rtp:prepend(lazypath)
 --vim.api.nvim_set_hl(0, "CmpItemKindFunction", { fg = "#ffbc03" })
 --vim.api.nvim_set_hl(0, "CmpItemKindMethod", { fg = "#ff5733" })
 
--- Подключаем LSP настройки
-require("settings.options") -- Дефолт настройки для вима(кейбинды, всякая минорная хуйня)
 
 
 --require("settings.create_file") -- Создание файла в текущей диреткории
+-- Подключаем LSP настройки
+require("settings.options") -- Дефолт настройки для вима(кейбинды, всякая минорная хуйня)
 -- Загружаем плагины
 require("plugins")
 require("lsp.pyright")
+require("lsp.nginx")
+require("lsp.rust")
+require("lsp.js")
+require("lsp.css")
 -- Настройка подсветки Treesitter
 vim.cmd("syntax on") -- Включить подсветку синтаксиса
 -- Настройка подсветки Treesitter
--- vim.cmd("colorscheme koehler ")
+vim.cmd("colorscheme tokyonight-night")
 

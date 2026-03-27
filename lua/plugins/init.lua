@@ -36,8 +36,8 @@ return require("lazy").setup({
   { import = "plugins.treesiter" },
   { import = "plugins.cmp" },
   { import = "plugins.toggleterm" },
-  --{ import = "plugins.navic" },
-  { import = "plugins.animation" },
+  { import = "plugins.navic" },
+  -- { import = "plugins.animation" },
 })
 
 
